@@ -39,7 +39,6 @@ body {
 
     .product-info > p {
         font-size: 13px;
-        /* width: 29ch; */
         letter-spacing: 0.2px;
         line-height: 18px;
         font-family: 'Kanit', sans-serif;
@@ -69,6 +68,15 @@ body {
 /* ----------------------  RESPONSIVE TO TABLETS AND DESKTOP DEVICES ----------------------  */
 
     @media (min-width: 576px) {
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            width: 500px;
+            height: 379px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
 
         .product-info > h1 {
             width: 10ch;
@@ -105,8 +113,9 @@ body {
                 background-color: #265545;
             }
         
-        .image-card {
+            .image-card {
             background-size: cover;
+
         }
 
     }
@@ -124,16 +133,8 @@ body {
         align-items: center;
     }
     
-        .container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        width: 500px;
-        height: 379px;
-        border-radius: 10px;
-        overflow: hidden;
-    }
+     
     
-
 
     .product-image {
     width: 100%;
