@@ -6,30 +6,40 @@
     <title>Frontend Mentor | Product preview card component</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-    <style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100;0,9..144,200;0,9..144,300;0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,100;1,9..144,200;1,9..144,300;1,9..144,400&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400&display=swap" rel="stylesheet">    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <style>
         .attribution { font-size: 11px; text-align: center; }
         .attribution a { color: hsl(228, 45%, 44%); }
-      </style>
+      </style> -->
 </head>
 <body>
+  <section class="product-card-preview"> 
     <main class="container">
-        <div class="">
-          <img class="product-image" src="/images/image-product-desktop.jpg" alt="product image">
+        <div class="image-card">
+          <!-- <img class="product-image" src="/images/image-product-desktop.jpg" alt="product image"> -->
         </div>
 
-        <article class="product-card">
+        <div class="product-card">
             <div class="product-info" >
                 <h4>PERFUME</h4>
                 <h1>Gabrielle Essence Eau De Parfum</h1>
                 <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, 
                     Perfumer-Creator for the House of CHANEL.</p>
-                <div>
+                <div class="price">
                     <h1>$149.99</h1>
-                    <h4>$169.99</h4>
+                    <p>$169.99</p>
                 </div>
-                <button class="add-to-cart-button">Add to Cart</button>
+                <a href="#"><button class="add-to-cart-button"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                  Add to Cart</button></a>
             </div>
-        </article>
+          </div>
     </main>
+  </section>
 </body>
 </html>

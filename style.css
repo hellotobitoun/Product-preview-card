@@ -8,28 +8,127 @@ body {
     background-color: #F3EAE4;
 }
 
+.product-card-preview {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
 .container {
-display: flex;
-border-width: 1px;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+width: 500px;
+height: 379px;
+border-radius: 10px;
+overflow: hidden;
+
+/* border-width: 1px;
 border: solid;
-border-color: red;
-align-items: center;
-width: 60vw;
+border-color: red; */
+/* align-items: center;
+width: 500px;
+height: 400px;
+margin: auto; */
+/* overflow: hidden; */
 }
 
 .product-image {
-width: 300px;
+
+width: 100%;
+
+}
+
+.image-card {
+background-image: url("/images/image-product-desktop.jpg");
+background-size: cover;
+width: 100%;
 
 }
 
 .product-card {
-
+display: flex;
+flex-direction: row;
+align-items: center;
+background-color: white;
 }
 
 .product-info {
+display: flex;
+flex-direction: column;
+gap: 15px;
+padding-left: 25px;
+padding-right: 15px;
+}
+
+.product-info > h4 {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 100;
+    letter-spacing: 5px;
+    font-size: 11px;
+}
+
+.product-info > h1 {
+    width: 10ch;
+    font-size: 32px;
+    line-height: 31px;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
 
 }
 
+.product-info > p {
+     width: 24ch;
+     letter-spacing: 0.2px;
+     font-size: 13px;
+     line-height: 18px;
+     font-family: 'Kanit', sans-serif;
+     font-weight: 300;
+     /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    color: rgb(145, 145, 145);
+    }
+
 .add-to-cart-button {
+background-color: #3C8269;
+color: white;
+border: none;
+padding: 10px 20px;
+border-radius: 5px;
+cursor: pointer;
+width: 190px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-weight: 600;
+transition-duration: 0.5s;
+}
+
+.add-to-cart-button:hover {
+    background-color: #265545;
+}
+
+
+.fa-shopping-cart {
+    margin-right: 5px;
+}
+
+.price {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.price > h1 {
+color: #3C8269;
+font-size: 28px;
+font-family: 'Fraunces', serif;
+font-weight: 600;
+
+}
+
+.price > p {
+    font-size: 11px;
+    text-decoration: line-through;
+    color: grey;
+    font-family: 'Fraunces', serif;
 
 }
